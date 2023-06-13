@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- js -->
+    <script src="./assets/js/global.js" defer></script>
+    <script src="./assets/js/index.js" type="module"></script>
+    <!-- links -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font ausom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/logo2.png" width="50" height="32" alt="MOvies">
+        </a>
+        <div class="search-box " search-box>
+            <div class="search-wrapper " search-wrapper>
+                <input type="text" name="search" aria-label="search movies" placeholder="Search Movies.."
+                    class="search-field" autocomplete="off" search-field>
+                <i class="fa-solid fa-magnifying-glass  leading-icon  "
+                    style="color: #ffffff; width: 24; height: 24;"></i>
+            </div>
+            <button class="search-btn" search-toggler>
+                <i class="fa-solid fa-xmark" style="color: #ffffff; width: 24; height: 24;"></i>
+            </button>
+        </div>
+
+        <div class="search-btn" search-toggler menu-close>
+            <i class="fa-solid fa-magnifying-glass  leading-icon  " style="color: #ffffff; width: 24; height: 24;"></i>
+        </div>
+
+        <button class="menu-btn  " menu-btn menu-toggler>
+            <i class="fa-solid fa-bars-staggered menu " style="color: #ffffff; width: 24; height: 24;"></i>
+            <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
+
+        </button>
+
+
+    </header>
+
+    <!-- SideBar -->
+    <nav class="sidebar " sidebar>
+        <div class="sidebar-inner">
+            <div class="sidebar-list">
+                <p class="title"> Genre</p>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Action</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Horror</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Comedy</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Adven</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Drama</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Sci-fi</a>
+            </div>
+            <div class="sidebar-list">
+                <p class="title"> Language</p>
+                <a href="./movie-list.html" menu-close class="sidebar-link">English</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Hindi</a>
+                <a href="./movie-list.html" menu-close class="sidebar-link">Marathi</a>
+            </div>
+
+            <div class="sidebar-footer">
+                <p class="copyright">
+                    Copyright 2003 All right Open <br>Made by Prem Shinde
+                </p>
+                <img src="./assets/images/logo2.png" width="40" height="30" alt="logo">
+            </div>
+
+
+
+        </div>
+
+    </nav>
+
+    <div class="overlay " overlay menu-toggler> </div>
+
+
+
+    <article class="container" page>
+
+    </article>
+
+
+</body>
+
+</html>
