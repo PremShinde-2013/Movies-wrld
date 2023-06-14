@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movies</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -13,6 +13,8 @@
     <!-- js -->
     <script src="./assets/js/global.js" defer></script>
     <script src="./assets/js/index.js" type="module"></script>
+    <!-- <script src="./assets/js/index.js" type="module" defer></script> -->
+    <!-- <script src="./assets/js/sidebar.js"></script> -->
     <!-- links -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,11 +49,12 @@
         </div>
 
         <div class="search-btn" search-toggler menu-close>
-            <i class="fa-solid fa-magnifying-glass  leading-icon  " style="color: #ffffff; width: 24; height: 24;"></i>
+            <img src="./assets/images/search.png" width="24" height="24" alt="open search box">
         </div>
 
         <button class="menu-btn  " menu-btn menu-toggler>
-            <i class="fa-solid fa-bars-staggered menu " style="color: #ffffff; width: 24; height: 24;"></i>
+            <i class="fa-solid fa-bars-staggered menu" style="color: #ffffff;  width: 24; height: 24;"></i>
+            <!-- <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu"> -->
             <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
 
         </button>
@@ -60,34 +63,8 @@
     </header>
 
     <!-- SideBar -->
-    <nav class="sidebar " sidebar>
-        <div class="sidebar-inner">
-            <div class="sidebar-list">
-                <p class="title"> Genre</p>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Action</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Horror</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Comedy</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Adven</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Drama</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Sci-fi</a>
-            </div>
-            <div class="sidebar-list">
-                <p class="title"> Language</p>
-                <a href="./movie-list.html" menu-close class="sidebar-link">English</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Hindi</a>
-                <a href="./movie-list.html" menu-close class="sidebar-link">Marathi</a>
-            </div>
+    <nav class="sidebar  " sidebar>
 
-            <div class="sidebar-footer">
-                <p class="copyright">
-                    Copyright 2003 All right Open <br>Made by Prem Shinde
-                </p>
-                <img src="./assets/images/logo2.png" width="40" height="30" alt="logo">
-            </div>
-
-
-
-        </div>
 
     </nav>
 
@@ -99,36 +76,9 @@
 
         <!-- banner -->
 
-        <section class="banner" aria-label="popular movies">
+        <!-- <section class="banner" aria-label="popular movies">
 
             <div class="banner-slider">
-                <div class="slider-item active" slider-item>
-                    <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
-
-                    <div class="banner-content">
-                        <h2 class="heading">
-                            puss in Boots
-                        </h2>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                2023
-                            </div>
-                            <div class="meta-item card-badge"> 7.5</div>
-                            <p class="genre">Anima, Acti,Adven</p>
-                            <p class="banner-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ullam commodi
-                                repudiandae harum obcaecati, doloribus, non facilis architecto illo dolorem vero
-                                perspiciatis id tenetur sunt dicta, vitae eveniet officiis expedita?
-                            </p>
-                            <a href="./detail.html" class="btn">
-                                <img src="./assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
-                                    alt="play Circle">
-                                <span class="span">Watch Now</span>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
                 <div class="slider-item " slider-item>
                     <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
 
@@ -156,119 +106,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-item " slider-item>
-                    <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
 
-                    <div class="banner-content">
-                        <h2 class="heading">
-                            puss in Boots
-                        </h2>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                2023
-                            </div>
-                            <div class="meta-item card-badge"> 7.5</div>
-                            <p class="genre">Anima, Acti,Adven</p>
-                            <p class="banner-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ullam commodi
-                                repudiandae harum obcaecati, doloribus, non facilis architecto illo dolorem vero
-                                perspiciatis id tenetur sunt dicta, vitae eveniet officiis expedita?
-                            </p>
-                            <a href="./detail.html" class="btn">
-                                <img src="./assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
-                                    alt="play Circle">
-                                <span class="span">Watch Now</span>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item " slider-item>
-                    <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
-
-                    <div class="banner-content">
-                        <h2 class="heading">
-                            puss in Boots
-                        </h2>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                2023
-                            </div>
-                            <div class="meta-item card-badge"> 7.5</div>
-                            <p class="genre">Anima, Acti,Adven</p>
-                            <p class="banner-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ullam commodi
-                                repudiandae harum obcaecati, doloribus, non facilis architecto illo dolorem vero
-                                perspiciatis id tenetur sunt dicta, vitae eveniet officiis expedita?
-                            </p>
-                            <a href="./detail.html" class="btn">
-                                <img src="./assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
-                                    alt="play Circle">
-                                <span class="span">Watch Now</span>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item " slider-item>
-                    <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
-
-                    <div class="banner-content">
-                        <h2 class="heading">
-                            puss in Boots
-                        </h2>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                2023
-                            </div>
-                            <div class="meta-item card-badge"> 7.5</div>
-                            <p class="genre">Anima, Acti,Adven</p>
-                            <p class="banner-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ullam commodi
-                                repudiandae harum obcaecati, doloribus, non facilis architecto illo dolorem vero
-                                perspiciatis id tenetur sunt dicta, vitae eveniet officiis expedita?
-                            </p>
-                            <a href="./detail.html" class="btn">
-                                <img src="./assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
-                                    alt="play Circle">
-                                <span class="span">Watch Now</span>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="slider-control">
                 <div class="control-inner">
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
+                    <button class="poster-box slider-item ">
+                        <img src="./assets/images/slider-control.jpg" alt="slider to boots" loading="lazy"
+                            draggable="false" class="img-cover">
                     </button>
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
-                    </button>
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
-                    </button>
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
-                    </button>
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
-                    </button>
-                    <button class="poster-box slider-item active">
-                        <img src="./assets/images/slider-control.jpg" alt="slider+ to boots" loading="false"
-                            draggable="true">
-                    </button>
+
+
+
                 </div>
             </div>
 
         </section>
+ -->
+
+        <!-- movies list -->
+
 
 
     </article>
