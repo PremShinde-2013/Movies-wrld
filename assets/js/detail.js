@@ -19,6 +19,31 @@ const getGenres = function (genreList) {
   return newGenreList.join(', ');
 };
 
+const getCasts = function (classList) {
+  const newCastList = [];
+  for (let i = 0, len = classList.length; i < len && i < 10; i++) {
+    const { name } = classList[i];
+    newCastList.push(name);
+  }
+  return newCastList.join(',');
+};
+
+const getDirectors = function (crewList) {
+  const directors = crewList.filter(({ job }) => job === 'Director');
+
+  const directorsList = [];
+  for (const { name } of directors) directorsList.push(name);
+
+  return directorsList.join(',');
+};
+
+const filterVideos = function (videoList) {
+  return videoList.filter(
+    ({ type, site }) =>
+      (type === 'Trailer' || type === 'Teaser') && site === 'Youtube'
+  );
+};
+
 fetchDataFromServer(
   //   `https://api.themoviedb.org/3/movie/${movieId}?api_key=${api_key}&append_to_response=casts,videos,images,releases`,
   `https://api.themoviedb.org/3/movie/${movieId}?api_key=8d00625906c97488b202db66eebf7dd3&append_to_response=casts,videos,images,releases`,
@@ -42,7 +67,8 @@ fetchDataFromServer(
 
     const movieDetail = document.createElement('div');
     movieDetail.classList.add('movie-detail');
-    movieDetail.innerHTML = html`
+
+    movieDetail.innerHTML = `
       <div class="backdrop-image" style="background-image: url("${imageBaseURL}${
       'w1280' || 'original'
     }${backdrop_path || poster_path})"></div>
@@ -88,7 +114,7 @@ fetchDataFromServer(
             </div>
             <div class="list-item">
               <p class="list-name">Directed By</p>
-              <p>Prem Shinde</p>
+              <p>${getDirectors(crew)}</p>
             </div>
           </ul>
         </div>
@@ -98,14 +124,30 @@ fetchDataFromServer(
         </div>
         <div class="slider-list">
           <div class="slider-inner">
-            <div class="video-card"></div>
-            <div class="video-card"></div>
-            <div class="video-card"></div>
-            <div class="video-card"></div>
-            <div class="video-card"></div>
           </div>
         </div>
       </div>
     `;
+
+    for (const { key, name } of filterVideos(videos)) {
+      const videoCard = document.createElement('div');
+      videoCard.classList.add('video-card');
+
+      videoCard.innerHTML = `
+        <iframe width="500"
+          height="294"
+          src="https://www.youtube.com/embed/${key}?&theme=dark&color=white&rel=0"
+          frameborder="0"
+          
+          title=${name}
+          class=" img-cover"
+          loading="lazy"
+        ></iframe>
+      `;
+
+      movieDetail.querySelector('.slider-inner').appendChild(videoCard);
+    }
+
+    pageContent.appendChild(movieDetail);
   }
 );
