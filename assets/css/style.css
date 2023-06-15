@@ -552,7 +552,7 @@ body {
   left: 24px;
   right: 24px;
   bottom: 206px;
-  z-index: 1;
+  z-index: 0;
   color: var(--text-color);
 }
 
