@@ -859,10 +859,10 @@ body {
     border-top-left-radius: var(--radius-36);
   }
 
-  .banner-content {
+  /* .banner-content {
     top: 104px;
     padding: 60px;
-  }
+  } */
 
   .backdrop-image {
     border-top-left-radius: var(--radius-36);
