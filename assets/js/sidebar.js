@@ -56,7 +56,7 @@ export function sidebar() {
 
     <div class="sidebar-footer">
       <p class="copyright">
-        Copyright 2003 All right Open <br />Made by Prem Shinde
+        Copyright 2023 All right Open <br />Made by Prem Shinde
       </p>
       <img src="./assets/images/logo2.png" width="40" height="30" alt="logo" />
     </div>
