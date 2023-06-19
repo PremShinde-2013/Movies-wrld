@@ -141,13 +141,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
     <script>
-    function validateForm() {
-        var x = document.forms["loginform"]["username"].value;
-        if (x == "") {
-            alert("Name must be filled out");
-            return false;
+        function validateForm() {
+            var x = document.forms["loginform"]["username"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
         }
-    }
     </script>
 
 

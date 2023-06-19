@@ -9,10 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $cpassword = $_POST["cpassword"];
     $fullname = $_POST["fullname"];
     $exists = false;
-    if (($password == $cpassword) && $exists == false)
+    if (($password == $cpassword) && $exists == false && !empty($password) && !empty($username) && !empty($cpassword) && !empty($fullname))
     {
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+
         $sql = "INSERT INTO `users` ( `username`, `password`, `dt`) VALUES ('$username', '$password', current_timestamp())";
-        $sql = "  INSERT INTO `users` ( `username`, `password`, `fullname`, `timestamp`) VALUES ( '$username', '$password', '$fullname', current_timestamp())";
+        $sql = "  INSERT INTO `users` ( `username`, `password`, `fullname`, `timestamp`) VALUES ( '$username', '$hash', '$fullname', current_timestamp())";
         $result = mysqli_query($conn, $sql);
         if ($result)
         {
