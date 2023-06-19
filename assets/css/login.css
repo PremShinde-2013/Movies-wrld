@@ -4,13 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  color: #fff;
 }
 
 body {
   font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #000;
-  color: #999;
+  background: #000000;
+  color: #f7cfff;
 }
 
 ul {
@@ -53,7 +55,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(31, 0, 39, 0.65);
   box-shadow: inset 30px 10px 150px #000000;
 }
 
@@ -75,7 +77,7 @@ img {
   z-index: 2;
   width: 450px;
   height: 650px;
-  background: rgb(0, 0, 0, 0.65);
+  background: rgba(44, 0, 54, 0.65);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -119,13 +121,13 @@ img {
   height: 50px;
   border-radius: 5px;
   background: red;
-  color: #fff;
+  color: #f8d6ff;
   font-size: inherit;
   font-weight: bold;
   border: none;
   cursor: pointer;
   outline: none;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 1px 0 rgba(15, 0, 16, 0.45);
 }
 
 .help {
@@ -135,7 +137,7 @@ img {
 }
 
 .help a {
-  color: #999;
+  color: #f8d6ff;
 }
 
 .help a:hover {
@@ -157,14 +159,14 @@ input[type='checkbox'] {
 }
 
 input[type='email'] {
-  background: #343434;
+  background: #702b7d;
 }
 
 input[type='password'] {
-  background: #343434;
+  background: #702b7d;
 }
 input[type='text'] {
-  background: #343434;
+  background: #702b7d;
 }
 
 /* ------ input end ------- */
@@ -199,7 +201,7 @@ input[type='text'] {
 }
 
 .more a {
-  color: rgb(17, 108, 228);
+  color: rgb(196, 17, 228);
 }
 
 .more a:hover,

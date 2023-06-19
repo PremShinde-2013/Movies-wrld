@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $sql = "Select * from users where username='$username' AND password='$password'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
-    if ($num == 1)
+    if ($num == 1 && !empty($username))
     {
         $login = true;
         session_start();
@@ -23,6 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         $showError = "Invalid Credentials";
     }
+
+    // if (empty($username))
+    // {
+    //     // maybe show the user a reason why this was rejected...
+    //     return;
+    // }
 }
 
 ?>
@@ -97,10 +103,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
         <div class="showcase-content">
             <div class="formm">
-                <form action="/movies/login.php" method="post">
+                <form action="/movies/login.php" method="post" name="loginform">
                     <h1>Login In</h1>
                     <div class="info">
-                        <input class="email" type="text" name="username" placeholder="Username"> <br>
+                        <input class="email" type="text" name="username" id="username" placeholder="Username"> <br>
                         <input class="email" type="password" id="password" name="password" placeholder="Password">
                     </div>
                     <div class="btn">
@@ -132,6 +138,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
     </header>
+
+
+    <script>
+    function validateForm() {
+        var x = document.forms["loginform"]["username"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+    </script>
 
 
 
