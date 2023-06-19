@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true)
+{
+    header("location: login.php");
+    exit;
+}
+
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,15 +24,20 @@
     <title>Movies</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- js -->
-    <script src="./assets/js/global.js" defer></script>
-    <script src="./assets/js/index.js" type="module"></script>
-    <!-- <script src="./assets/js/index.js" type="module" defer></script> -->
-    <!-- <script src="./assets/js/sidebar.js"></script> -->
+    <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/index.js" type="module"></script>
+    <!-- <script src="assets/js/index.js" type="module" defer></script> -->
+    <!-- <script src="assets/js/sidebar.js"></script> -->
     <!-- links -->
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,36 +53,7 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
-
-        <a href="./index.html" class="logo">
-            <img src="./assets/images/logo2.png" width="50" height="32" alt="MOvies">
-        </a>
-        <div class="search-box " search-box>
-            <div class="search-wrapper " search-wrapper>
-                <input type="text" name="search" aria-label="search movies" placeholder="Search Movies.."
-                    class="search-field" autocomplete="off" search-field>
-                <i class="fa-solid fa-magnifying-glass  leading-icon  "
-                    style="color: #ffffff; width: 24; height: 24;"></i>
-            </div>
-            <button class="search-btn" search-toggler>
-                <i class="fa-solid fa-xmark" style="color: #ffffff; width: 24; height: 24;"></i>
-            </button>
-        </div>
-
-        <div class="search-btn" search-toggler menu-close>
-            <img src="./assets/images/search.png" width="24" height="24" alt="open search box">
-        </div>
-
-        <button class="menu-btn  " menu-btn menu-toggler>
-            <i class="fa-solid fa-bars-staggered menu" style="color: #ffffff;  width: 24; height: 24;"></i>
-            <!-- <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu"> -->
-            <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
-
-        </button>
-
-
-    </header>
+    <?php require 'assets/partials/_nav.php' ?>
 
     <main>
 
@@ -82,7 +75,7 @@
 
             <div class="banner-slider">
                 <div class="slider-item " slider-item>
-                    <img src="./assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
+                    <img src="assets/images/slider-banner.jpg" class="img-cover" loading="eager" alt="Puss in Boots">
 
                     <div class="banner-content">
                         <h2 class="heading">
@@ -99,8 +92,8 @@
                                 repudiandae harum obcaecati, doloribus, non facilis architecto illo dolorem vero
                                 perspiciatis id tenetur sunt dicta, vitae eveniet officiis expedita?
                             </p>
-                            <a href="./detail.html" class="btn">
-                                <img src="./assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
+                            <a href="detail.php" class="btn">
+                                <img src="assets//images/play_circle.png" width="24" height="24" aria-hidden="true"
                                     alt="play Circle">
                                 <span class="span">Watch Now</span>
                             </a>
@@ -114,7 +107,7 @@
             <div class="slider-control">
                 <div class="control-inner">
                     <button class="poster-box slider-item ">
-                        <img src="./assets/images/slider-control.jpg" alt="slider to boots" loading="lazy"
+                        <img src="assets/images/slider-control.jpg" alt="slider to boots" loading="lazy"
                             draggable="false" class="img-cover">
                     </button>
 

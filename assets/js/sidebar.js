@@ -42,6 +42,7 @@ export function sidebar() {
         with_original_language=hi", "Hindi")'
         >Hindi</a
       >
+
       <a
         href="./movie-list.html"
         menu-close
@@ -50,6 +51,7 @@ export function sidebar() {
         with_original_language=bn", "Bengali")'
         >Bengali</a
       >
+
     </div>
 
     <div class="sidebar-footer">
@@ -58,6 +60,7 @@ export function sidebar() {
       </p>
       <img src="./assets/images/logo2.png" width="40" height="30" alt="logo" />
     </div>
+
   `;
 
   const genreLink = function () {
