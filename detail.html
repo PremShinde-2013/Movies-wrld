@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>details</title> -->
-
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
     <!-- css -->
@@ -14,7 +12,6 @@
     <script src="assets/js/global.js" defer></script>
     <script src="assets/js/detail.js" type="module"></script>
     <!-- links -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -27,12 +24,7 @@
 </head>
 
 <body>
-
-    <!-- Header -->
-    <!-- <?php require 'assets/partials/_nav.php' ?> -->
-
     <header class="header">
-
         <a href="./index.php" class="logo">
             <img src="./assets/images/logo2.png" width="50" height="32" alt="MOvies">
         </a>
@@ -55,316 +47,19 @@
         <button class="menu-btn  " menu-btn menu-toggler>
             <i class="fa-solid fa-bars-staggered menu " style="color: #ffffff; width: 24; height: 24;"></i>
             <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
-
         </button>
-
-
     </header>
-
-
-
-
     <main>
-
-
         <!-- SideBar -->
         <nav class="sidebar " sidebar>
             <div class="sidebar-inner">
-                <div class="sidebar-list">
-                    <p class="title"> Genre</p>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Action</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Horror</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Comedy</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Adven</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Drama</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Sci-fi</a>
-                </div>
-                <div class="sidebar-list">
-                    <p class="title"> Language</p>
-                    <a href="movie-list.html" menu-close class="sidebar-link">English</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Hindi</a>
-                    <a href="movie-list.html" menu-close class="sidebar-link">Marathi</a>
-                </div>
-
-                <div class="sidebar-footer">
-                    <p class="copyright">
-                        Copyright 2003 All right Open <br>Made by Prem Shinde
-                    </p>
-                    <img src="assets/images/logo2.png" width="40" height="30" alt="logo">
-                </div>
-
-
 
             </div>
-
         </nav>
-
         <div class="overlay " overlay menu-toggler> </div>
-
-
-
         <article class="container" page-content>
-
-            <!-- Movies details -->
-
-
-
-            <!-- movies list -->
-            <!-- 
-        <section class="movie-list" aria-label="upcoming movies">
-
-            <div class="slider-list">
-                <div class="slider-inner">
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                    <div class="movie-card">
-                        <figure class="poster-box card-banner">
-                            <img src="assets/images/slider-control.jpg" class="img-cover" alt="puss in boots">
-                        </figure>
-                        <h4 class="title">Puss in Boots</h4>
-                        <div class="meta-list">
-                            <div class="meta-item">
-                                <img src="assets/images/star.png" width="20" height="20" alt="rating">
-                                <span class="span">9.0</span>
-                            </div>
-
-                            <div class="card-badge">2023</div>
-                        </div>
-
-                        <a href="detail.php" class="card-btn" title="puss in boots"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
- -->
-
         </article>
-
     </main>
-
-
 </body>
 
 </html>

@@ -25,25 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     }
 
 
-    // if ($num == 1)
-    // {
-    //     $row = mysqli_fetch_assoc($result);
-
-    //     if (password_verify($password, $row['password']))
-    //     {
-    //         $login = true;
-    //         session_start();
-    //         $_SESSION['loggedin'] = true;
-    //         $_SESSION['username'] = $username;
-    //         header("location: index.php");
-    //     }
-
-    // } else
-    // {
-    //     $showError = "Invalid Credentials";
-    // }
-
-
 }
 
 ?>
@@ -58,10 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
     <link rel="stylesheet" href="assets/css/login.css">
-
-    <!-- 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
     <title>Login</title>
 </head>
@@ -88,27 +65,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     </div> ';
     }
     ?>
-
-    <!-- <div class="container my-4">
-        <h1 class="text-center">Login </h1>
-        <form action="/movies/login.php" method="post">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
-
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password">
-            </div>
-
-
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-    </div> -->
-
-
-
     <header class="showcase">
 
 
@@ -148,9 +104,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
         </div>
-
-
-
 
     </header>
 

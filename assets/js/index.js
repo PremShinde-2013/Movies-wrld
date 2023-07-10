@@ -2,7 +2,6 @@
 
 'use strict';
 
-// imports
 
 import { sidebar } from './sidebar.js';
 import { api_key, imageBaseURL, fetchDataFromServer } from './api.js';
@@ -128,10 +127,7 @@ const heroBanner = function ({ results: movieList }) {
         class="img-cover"
       />
     `;
-    // <img
-    //   src={movie.poster_path ? `${apiImageAddress}w300${movie.poster_path}` : ''}
-    //   alt="movie_picture"
-    // />
+  
     banner.querySelector('.control-inner').appendChild(controlItem);
   }
 
